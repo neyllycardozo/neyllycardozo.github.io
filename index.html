@@ -1,21 +1,170 @@
-<!DOCTYPE html>
-<html lang="it">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4d7834">
+  <meta name="description" content="Recursos prácticos para una vida que funcione contigo, no contra ti.">
+  <title>recursosparands — Herramientas para una vida que funcione contigo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <strong>This is my personal website</strong>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="recursosparands, inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img"><path d="M24 4c-8.8 0-15.8 6.8-15.8 15.2 0 4.7 2.2 7.9 5.3 10.5 1.7 1.4 2.3 3 2.3 5.4h16.4c0-2.4.7-4 2.3-5.4 3.1-2.6 5.3-5.8 5.3-10.5C39.8 10.8 32.8 4 24 4Z"/><path d="M18 38h12M19.5 42h9M24 12v15m-6-9 6 9 6-9"/><path d="M24 9c-2.6 2.1-3.5 4.1-3.5 6.3 2.4-.5 4.6-.5 7 0C27.5 13.1 26.6 11.1 24 9Z"/></svg>
+      </span>
+      <span class="brand-name">recursos<span>para</span>nds</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav">
+      <a href="#recursos">Recursos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#proyecto">Sobre el proyecto</a>
+      <a class="button button-red nav-cta" href="#recursos">Explorar recursos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow">¡Hola, cerebro diferente!</p>
+        <h1>Herramientas para una vida que funcione contigo, <span>no contra ti.</span></h1>
+        <p class="hero-copy">Recursos prácticos para organizarte, cuidar tu energía y hacer las cosas a tu manera. Diseñados pensando en las distintas formas de experimentar el mundo.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#recursos">Explorar recursos <span aria-hidden="true">→</span></a>
+          <a class="button button-light" href="#categorias"><span aria-hidden="true">◎</span> Descubrir qué necesito</a>
+        </div>
+        <div class="hero-doodle" aria-hidden="true">
+          <svg viewBox="0 0 220 180"><path d="M111 13c-11 0-20 8-20 19 0 7 3 11 9 15 4 3 5 7 5 12h20c0-5 1-9 5-12 6-4 9-8 9-15 0-11-8-19-20-19"/><path d="M104 66h32m-29 9h26m-22 9h18M120 29v22m-10-12 10 12 10-12"/><path d="M25 116c21-22 34-21 48-2m72-1c20-25 35-26 52-5"/></svg>
+          <span>pequeños pasos,<br>a tu manera</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <div class="section-wrap intro-content">
+        <p class="eyebrow">Menos exigencia. Más herramientas.</p>
+        <h2><span>No necesitas</span> otra lista de cosas que deberías hacer.</h2>
+        <p>Estos recursos buscan facilitar tareas específicas con herramientas visuales, instrucciones claras y opciones flexibles. Tú decides qué usar.</p>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="round-icon orange">✳</span><h3>Pensados para la vida cotidiana</h3><p>Recursos centrados en situaciones reales.</p></article>
+          <article class="benefit-card"><span class="round-icon green">↝</span><h3>Flexibles</h3><p>Utiliza únicamente las herramientas que te sirvan.</p></article>
+          <article class="benefit-card"><span class="round-icon red">◷</span><h3>A tu ritmo</h3><p>Sin obligación de completar todo ni seguir una rutina perfecta.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-wrap" id="categorias">
+      <div class="section-heading">
+        <p class="eyebrow">Empieza por lo que necesitas</p>
+        <h2>¿Qué te gustaría hacer un poco más fácil?</h2>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-filter="organizacion"><span class="category-icon orange">☷</span><strong>Organización y tareas</strong><span>Empezar, priorizar y terminar sin pelearte con tu cabeza.</span><em>Ver recursos →</em></button>
+        <button class="category-card" data-filter="sensorial"><span class="category-icon navy">♧</span><strong>Sobrecarga sensorial</strong><span>Detectar señales y tener a mano qué hacer cuando todo es demasiado.</span><em>Ver recursos →</em></button>
+        <button class="category-card" data-filter="energia"><span class="category-icon green">▣</span><strong>Energía social y descanso</strong><span>Medir tu batería y planear pausas sin culpa.</span><em>Ver recursos →</em></button>
+        <button class="category-card" data-filter="rutinas"><span class="category-icon yellow">☼</span><strong>Rutinas y autocuidado</strong><span>Rutinas que se adaptan a tus días buenos y no tan buenos.</span><em>Ver recursos →</em></button>
+        <button class="category-card" data-filter="viajes"><span class="category-icon red">♧</span><strong>Viajes y experiencias accesibles</strong><span>Planear salidas y viajes con menos sorpresas.</span><em>Ver recursos →</em></button>
+        <button class="category-card" data-filter="comunicacion"><span class="category-icon purple">♡</span><strong>Autoconocimiento y comunicación</strong><span>Entender cómo funcionas y explicarlo a otras personas.</span><em>Ver recursos →</em></button>
+      </div>
+    </section>
+
+    <section class="resources-section" id="recursos">
+      <div class="section-wrap">
+        <div class="resources-heading">
+          <div><p class="eyebrow">Ideas que pueden convertirse en herramientas</p><h2>Recursos para la vida real</h2><p>Herramientas digitales para situaciones concretas, sin fórmulas mágicas ni exigencias imposibles.</p></div>
+          <div class="validation-note">Todos están en validación: anótate en los que te interesen y crearemos primero los más pedidos.</div>
+        </div>
+        <div class="resource-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="resource-search" type="search" placeholder="Buscar un recurso…" aria-label="Buscar un recurso"></label>
+          <div class="filter-list" aria-label="Filtrar por categoría">
+            <button class="filter-chip active" data-filter="todos">Todos</button>
+            <button class="filter-chip" data-filter="organizacion">Organización</button>
+            <button class="filter-chip" data-filter="sensorial">Sensorial</button>
+            <button class="filter-chip" data-filter="energia">Energía</button>
+            <button class="filter-chip" data-filter="rutinas">Rutinas</button>
+            <button class="filter-chip" data-filter="viajes">Viajes</button>
+            <button class="filter-chip" data-filter="comunicacion">Comunicación</button>
+          </div>
+        </div>
+        <div class="resource-grid" id="resource-grid">
+          <article class="resource-card" data-id="kit-antisobrecarga" data-category="sensorial">
+            <div class="resource-art art-navy"><span class="status">En validación</span><div class="paper"><span class="paper-icon">◖</span><b>KIT<br>ANTISOBRECARGA</b></div></div>
+            <div class="resource-info"><h3>Kit antisobrecarga</h3><p><b>Para cuando:</b> Cuando hay demasiado ruido, luz o gente y no sabes por dónde empezar a bajar la intensidad.</p><p><b>Te ayuda a:</b> Tener un plan visual a mano para reconocer señales y elegir qué hacer.</p><div class="tags"><span>PDF imprimible + versión para celular</span><span>Precio por definir</span></div><button class="card-link" data-open="kit-antisobrecarga">Me interesa <span>→</span></button></div>
+          </article>
+          <article class="resource-card" data-id="destraba-el-dia" data-category="organizacion">
+            <div class="resource-art art-orange"><span class="status">En validación</span><div class="paper"><span class="paper-icon">☷</span><b>DESTRABA<br>EL DÍA</b></div></div>
+            <div class="resource-info"><h3>Destraba el día</h3><p><b>Para cuando:</b> Tienes mil cosas pendientes y ninguna arranca.</p><p><b>Te ayuda a:</b> Partir tareas en pasos chiquitos y elegir una para empezar.</p><div class="tags"><span>PDF editable</span><span>Precio por definir</span></div><button class="card-link" data-open="destraba-el-dia">Me interesa <span>→</span></button></div>
+          </article>
+          <article class="resource-card" data-id="viajar-a-mi-manera" data-category="viajes">
+            <div class="resource-art art-red"><span class="status">Próximo lanzamiento</span><div class="paper"><span class="paper-icon">♧</span><b>VIAJAR A<br>MI MANERA</b></div></div>
+            <div class="resource-info"><h3>Viajar a mi manera</h3><p><b>Para cuando:</b> Viajar emociona, pero la incertidumbre y los cambios agotan.</p><p><b>Te ayuda a:</b> Anticipar el viaje con guías visuales y planes de respaldo.</p><div class="tags"><span>PDF imprimible</span><span>Precio por definir</span></div><button class="card-link" data-open="viajar-a-mi-manera">Me interesa <span>→</span></button></div>
+          </article>
+          <article class="resource-card" data-id="bateria-social" data-category="energia">
+            <div class="resource-art art-green"><span class="status">En validación</span><div class="paper"><span class="paper-icon">▣</span><b>BATERÍA<br>SOCIAL</b></div></div>
+            <div class="resource-info"><h3>Batería social</h3><p><b>Para cuando:</b> Llegas sin energía a mitad de semana y no sabes en qué se fue.</p><p><b>Te ayuda a:</b> Ver cuánta energía te piden tus planes y reservar descanso.</p><div class="tags"><span>PDF imprimible + versión para celular</span><span>Precio por definir</span></div><button class="card-link" data-open="bateria-social">Me interesa <span>→</span></button></div>
+          </article>
+          <article class="resource-card" data-id="rutinas-sin-rigidez" data-category="rutinas">
+            <div class="resource-art art-yellow"><span class="status">En validación</span><div class="paper"><span class="paper-icon">☼</span><b>RUTINAS SIN<br>RIGIDEZ</b></div></div>
+            <div class="resource-info"><h3>Rutinas sin rigidez</h3><p><b>Para cuando:</b> Las rutinas perfectas duran tres días y después te sientes peor.</p><p><b>Te ayuda a:</b> Rutinas con versiones mínimas para días de poca energía.</p><div class="tags"><span>PDF editable</span><span>Precio por definir</span></div><button class="card-link" data-open="rutinas-sin-rigidez">Me interesa <span>→</span></button></div>
+          </article>
+          <article class="resource-card" data-id="mi-manual" data-category="comunicacion">
+            <div class="resource-art art-purple"><span class="status">En validación</span><div class="paper"><span class="paper-icon">♡</span><b>MI MANUAL DE<br>INSTRUCCIONES</b></div></div>
+            <div class="resource-info"><h3>Mi manual de instrucciones</h3><p><b>Para cuando:</b> Te cuesta explicar qué necesitas en el trabajo, en casa o con amistades.</p><p><b>Te ayuda a:</b> Armar un documento propio para compartir cómo funcionas mejor.</p><div class="tags"><span>PDF editable</span><span>Precio por definir</span></div><button class="card-link" data-open="mi-manual">Me interesa <span>→</span></button></div>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No encontramos recursos con esa búsqueda. Prueba con otra palabra.</p>
+      </div>
+    </section>
+
+    <section class="how-section section-wrap" id="como-funciona">
+      <p class="eyebrow">Sin complicaciones</p><h2>Cómo funciona</h2>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">1</span><span class="step-icon">◎</span><h3>Encuentra tu recurso</h3><p>Busca uno que responda a una necesidad concreta.</p></article>
+        <article class="step-card"><span class="step-number">2</span><span class="step-icon">⌕</span><h3>Mira qué incluye</h3><p>Consulta su contenido, cómo se usa y si es descargable, imprimible o editable.</p></article>
+        <article class="step-card"><span class="step-number">3</span><span class="step-icon">⇩</span><h3>Accede cuando esté listo</h3><p>Cuando esté disponible, cómpralo y accede al formato indicado en su ficha. Por ahora, anótate a la lista.</p></article>
+      </div>
+      <div class="yellow-callout"><span class="bulb">♧</span><h3>¿Qué te gustaría que fuera más fácil?</h3><p>Aún no tenemos reseñas porque todavía no hay ventas. Mientras tanto, cuéntanos qué situaciones cotidianas te cuestan: tus ideas deciden qué creamos.</p><button class="button button-red" data-suggestion>Enviar una sugerencia</button></div>
+    </section>
+
+    <section class="project-section" id="proyecto">
+      <div class="project-inner"><p class="eyebrow">Una idea que crece en comunidad</p><h2>Un proyecto que nace de <span>Turismo para NDs.</span></h2>
+        <div class="project-logo" aria-hidden="true"><span class="project-symbol">✈</span><b>turismo<span>para</span>nds</b></div>
+        <p>Recursos para NDs surge de Turismo para NDs, un proyecto de divulgación sobre neurodivergencia y accesibilidad que busca explorar formas de hacer que las experiencias cotidianas sean más accesibles.</p>
+        <p>Esta nueva etapa amplía esa idea con recursos prácticos relacionados con la organización, la energía, las necesidades sensoriales y otras situaciones de la vida diaria.</p>
+        <p>El objetivo es desarrollar herramientas que partan de necesidades reales y seguir explorando qué recursos pueden resultar útiles para la comunidad.</p>
+        <a class="button button-light" href="#sugerencias">◎ Seguir a @turismoparands</a>
+      </div>
+    </section>
+
+    <section class="faq-section section-wrap" id="preguntas">
+      <p class="eyebrow">¿Tienes dudas?</p><h2>Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <details><summary>¿Qué es Recursos para NDs?</summary><p>Es un espacio de herramientas y recursos prácticos para hacer más accesibles distintas situaciones de la vida cotidiana.</p></details>
+        <details><summary>¿Necesito un diagnóstico para utilizar los recursos?</summary><p>No. Los recursos están pensados para cualquier persona a la que puedan resultarle útiles; no necesitas un diagnóstico para utilizarlos.</p></details>
+        <details><summary>¿Los productos son físicos o digitales?</summary><p>Los recursos indicarán en su ficha el formato disponible. La propuesta actual contempla principalmente documentos digitales imprimibles o editables.</p></details>
+        <details><summary>¿Puedo utilizar los recursos desde mi celular?</summary><p>Algunos recursos incluirán una versión adaptada para celular. Consulta el formato indicado en cada ficha.</p></details>
+        <details><summary>¿Cómo recibiré mi compra?</summary><p>Cuando los recursos estén disponibles, la ficha indicará cómo acceder al archivo y utilizarlo.</p></details>
+        <details><summary>¿Los recursos sustituyen la atención profesional?</summary><p>No. Son herramientas de apoyo para situaciones cotidianas y no sustituyen atención, orientación ni tratamientos profesionales.</p></details>
+        <details><summary>¿Qué sucede si un producto todavía está en desarrollo?</summary><p>Puedes dejar tu correo en la ficha del recurso. Así podremos avisarte cuando esté disponible. Anotarte no tiene ningún coste.</p></details>
+        <details><summary>¿Cómo puedo sugerir una nueva herramienta?</summary><p>Utiliza el botón de sugerencias para contarnos qué situación te gustaría hacer más fácil.</p></details>
+      </div>
+    </section>
+
+    <section class="suggest-section" id="sugerencias"><div class="suggest-box"><span class="bulb">♧</span><h2>¿Qué te gustaría que fuera más fácil?</h2><p>Aún no tenemos reseñas porque todavía no hay ventas. Mientras tanto, cuéntanos qué situaciones cotidianas te cuestan: tus ideas deciden qué creamos.</p><button class="button button-red" data-suggestion>Enviar una sugerencia</button></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span><span class="brand-name">recursos<span>para</span>nds</span></a><div class="footer-links"><a href="#recursos">Recursos</a><a href="#como-funciona">Cómo funciona</a><a href="#proyecto">Sobre el proyecto</a><a href="#preguntas">Preguntas frecuentes</a></div><div class="legal-links"><a href="#privacidad">Preferencias de cookies</a><a href="#privacidad">Política de privacidad</a><a href="#terminos">Términos</a></div><small>© <span id="year"></span> Recursos para NDs</small></footer>
+
+  <dialog class="resource-dialog" id="resource-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="Cerrar">×</button>
+    <div class="detail-layout"><div class="detail-copy"><div class="detail-labels"><span class="eyebrow" id="detail-status">En validación</span><span class="eyebrow" id="detail-category"></span></div><h2 id="dialog-title">Recurso</h2><p class="detail-description" id="detail-description"></p><h3>El problema</h3><p id="detail-problem"></p><h3>Lo que buscaría facilitar</h3><p id="detail-help"></p><h3>Propuesta preliminar de contenido</h3><p class="muted">Puede cambiar según lo que nos cuente la comunidad.</p><ul class="detail-items" id="detail-items"></ul><div class="format-box"><div><b>Formato</b><span id="detail-format"></span></div><div><b>Precio</b><span>Precio por definir</span></div></div></div>
+      <aside class="interest-card"><div class="interest-head"><span>¿te serviría?</span><strong>ME INTERESA</strong></div><form class="interest-form"><p>Este recurso todavía no existe: está en validación. Si te anotas, sabremos que vale la pena crearlo y te avisaremos cuando esté listo. No se cobra nada.</p><label for="interest-email">Tu correo</label><input id="interest-email" type="email" placeholder="nombre@correo.com" required><label class="consent"><input type="checkbox" required><span>Acepto recibir correos sobre este recurso. No compartimos tu correo y no pedimos datos de salud.</span></label><button class="button button-red" type="submit">Avísame cuando esté listo</button><p class="form-feedback" aria-live="polite"></p></form></aside></div>
+  </dialog>
+
+  <dialog class="suggest-dialog" id="suggest-dialog" aria-labelledby="suggest-title"><button class="dialog-close" aria-label="Cerrar">×</button><div class="suggest-modal-content"><p class="eyebrow">Tu idea puede ayudar</p><h2 id="suggest-title">Cuéntanos qué te gustaría hacer más fácil</h2><form id="suggest-form"><label for="suggestion">¿Qué situación cotidiana te gustaría resolver?</label><textarea id="suggestion" rows="5" placeholder="Me cuesta…" required></textarea><label for="suggest-email">Tu correo (opcional)</label><input id="suggest-email" type="email" placeholder="nombre@correo.com"><button class="button button-red" type="submit">Enviar sugerencia</button><p class="form-feedback" aria-live="polite"></p></form></div></dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
